@@ -1,0 +1,166 @@
+#footer
+{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  /*border-bottom: 1px solid #000000;*/
+  border-top: 1px solid #e4e4e4;
+  background-color: #f2f2f2;
+}
+#footer a
+{
+    color: #666;
+    margin-right: 30px;
+    opacity: 1;
+}
+#footer-left
+{
+  width: 500px;
+  height: 100%;
+  float: left;
+  margin-left: 25px;
+  line-height: 40px;
+}
+#footer-left div
+{
+  float: left;
+}
+#footer-right
+{
+  width: 500px;
+  height: 100%;
+  float: right;
+  line-height: 40px;
+}
+#footer-right div
+{
+  float: right;
+}
+#navbar
+{
+  width: 100%;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  /*border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;*/
+
+}
+#navbar-options
+{
+  width: 240px;
+  height: 100%;
+  float: right;
+  margin-right: 25px;
+  line-height: 30px;
+}
+a
+{
+  font-family: arial;
+  font-size: 13px;
+  color: #000;
+  opacity: 0.75;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+
+}
+a:hover
+{
+  text-decoration: underline;
+}
+#navbar-options div
+{
+  float: left;
+}
+.options
+{
+  height: 30px;
+  width: 30px;
+  opacity: 0.55;
+  background-image: url('icons.png');
+  background-size: 528px 68px;
+  margin-left: 15px;
+}
+#apps
+{
+  background-position: -132px -38px;
+  margin-left: 0 !important;
+}
+#apps:hover, #alerts:hover
+{
+  opacity: 1;
+}
+#alerts
+{
+  margin-left: 20px;
+}
+#avatar
+{
+  background-image: none;
+  background-color: blue;
+  border-radius: 50%;
+}
+#content
+{
+  margin: auto;
+  display: block;
+  margin-top: 15%;
+
+}
+#logo
+{
+  margin: auto;
+  display: block;
+  height: 20%;
+  width: 20%;
+  margin-bottom: 10px;
+}
+#search-box
+{
+  margin: auto;
+  display: block;
+  width: 30%;
+  line-height: 30px;
+  border: 1px solid #d9d9d9;
+  padding-left: 10px;
+}
+#search-box:focus
+{
+  border: 1px solid #4d90fe;
+}
+#search-box:hover
+{
+  border: 1px solid #b9b9b9;
+}
+.button
+{
+  background-color: rgba(217,217,217,0.45);
+  border: 1px solid rgba(217,217,217,0);
+  height: 35px;
+  width: 130px;
+  display: inline-block;
+  color: #757575;
+}
+.button:hover
+{
+  border: 1px solid #757575;
+  color: #000;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  border-radius: 3%;
+}
+#buttons-container
+{
+  margin-top: 25px;
+  text-align: center;
+}
+#lucky-button
+{
+  margin-left: 5px;
+}
+#search-button
+{
+  margin-right: 5px;
+}
