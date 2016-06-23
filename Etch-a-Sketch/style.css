@@ -1,0 +1,30 @@
+#grid
+{
+  width: 600px;
+  height: 600px;
+  margin: auto;
+
+}
+#button-container
+{
+  width: 200px;
+  margin: auto;
+  margin-bottom: 15px;
+  text-align:center;
+}
+.row
+{
+  text-align: center;
+  white-space:nowrap;
+}
+.square
+{
+  background-color: black;
+  opacity: 1;
+}
+.bg-square
+{
+  background-color: black;
+  display: inline-block;
+  border: 1px solid white;
+}
