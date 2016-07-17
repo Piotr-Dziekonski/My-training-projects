@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  function randomColor(){ // picks a random number from 0 to 256
+  function randomColor(){ // picks a random number from 0 to 360
     return Math.floor(Math.random()*361-0.00000000000000000000001);
   };
     function generate(size){ // generates a grid with dimensions equal to size (e.g. size = 10 then grid -> 10x10)
