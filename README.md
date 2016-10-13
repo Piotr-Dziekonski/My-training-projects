@@ -1,2 +1,0 @@
-# Takie-tam
-Różne
