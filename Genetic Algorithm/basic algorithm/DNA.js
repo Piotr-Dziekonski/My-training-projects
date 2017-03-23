@@ -20,6 +20,7 @@ function DNA(l)
       }
     }
     this.fitness = score / target.length;
+    this.fitness = Math.pow(this.fitness, 128);
   }
 
   this.crossover = function(partner){

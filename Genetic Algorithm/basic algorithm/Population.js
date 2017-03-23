@@ -23,7 +23,7 @@ function Population(t, p, mR)
     }
   }
   this.calcFitness();
-
+	
   this.getBest = function(){
     var bestFit = 0;
     var indexOfBest = 0;
@@ -50,7 +50,11 @@ function Population(t, p, mR)
     }
 
     for (var i = 0; i < this.population.length; i++) {
-      var n = Math.floor(this.population[i].fitness*100)
+      map = function(number, in_min, in_max, out_min, out_max){
+         return (number - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+      }
+      var fitness = map(this.population[i].fitness, 0, bestFit, 0, 1);
+      var n = Math.floor(fitness*100);
 
       for (var j = 0; j < n; j++) {
         this.matingPool.push(this.population[i]);
@@ -82,6 +86,10 @@ function Population(t, p, mR)
 
   this.isFinished = function() {
     return this.finished;
+  }
+
+  this.getGeneration = function(){
+    return this.generations;
   }
 
   this.evaluate = function() {

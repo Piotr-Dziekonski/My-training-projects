@@ -10,16 +10,19 @@ function setup()
   bestPhrase = document.createElement('p');
   avgFitness = document.createElement('p');
   population = document.createElement('p');
+  gen = document.createElement('p');
   inputmsg = document.createElement('input');
   button = document.createElement('button');
   document.body.appendChild(bestPhrase).className = "bestPhrase";
   document.body.appendChild(avgFitness).className = "avgFitness";
   document.body.appendChild(population).className = "population";
+  document.body.appendChild(gen).className = "generation";
   document.body.appendChild(inputmsg).className = "inputmsg";
   document.body.appendChild(button).className = "button";
   button.innerHTML = "Evolve";
   bestPhrase.innerHTML = "Best phrase: ";
   avgFitness.innerHTML = "Average fitness: ";
+  gen.innerHTML = "Generation: ";
 
   inputmsg.value = "test";
 
@@ -68,5 +71,6 @@ function displayInfo()
     var answer = population.getBest();
     bestPhrase.innerHTML = "Best phrase: " + answer;
     avgFitness.innerHTML = "Average fitness: " + population.getAverageFitness();
+    gen.innerHTML = "Generation: " + population.getGeneration();
 
 }
